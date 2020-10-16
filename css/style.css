@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    background-image: url("../images/bg3.jpg");
+    height: 660px;
+    opacity: 0.9;
+    /* create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-sub{
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-sub h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px white;
+    letter-spacing: 1px;
+}
+
+.container-sub h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px white;
+    letter-spacing: 1px;
+}
+
+.container-sub p{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+
+.social-links a{
+    padding: 10px;
+    font-size: 30px;
+    color: lightgrey;
+}
+
+.about-me{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.about-me-me{
+    width: 30%;
+    margin-left: 80px;
+    color: white;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.profile-pic{
+    
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+
+.skillset{
+    line-height: 25px;
+    color: white;
+    padding-top: 20px;
+}
+
+.project{
+    background-image: url("../images/bg2.jpg");
+    height: 650px;
+    opacity: 0.7;
+
+    /* create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-pr{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.project-pr-pr{
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    width: 30%;
+    height: 310px;
+}
+
+.project-pr-pr a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+.project-pr-pr a:hover{
+    background-color: rgb(41, 41, 41);
+}
+/* Media Queries */
+
+
+@media only screen and (max-width: 600px) {
+	.container-sub{
+        margin-top: auto;
+        top: 5%;
+        width: 80%;
+        margin-left: 10%;	
+    }
+    .profile-pic{
+        width: 50%;
+    }
+    .about-me{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-me-me{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+    }
+    .skillset{
+        margin: 0;
+        padding: 0;
+    }
+    .project{
+        height: auto;
+    }
+    .project-pr{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-pr-pr{
+        width: 80%;
+    }
+
+}
