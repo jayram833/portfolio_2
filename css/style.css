@@ -29,7 +29,7 @@ header {
   list-style: none;
 }
 .nav__item {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-right: 2rem;
 }
 
@@ -45,7 +45,7 @@ header {
 
 .container {
   background-image: url('../images/bg3.jpg');
-  height: 660px;
+  height: 750px;
   opacity: 0.9;
   /* create the parallax scrolling effect */
   background-attachment: fixed;
@@ -60,11 +60,11 @@ header {
   opacity: 0.9;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 25%;
   width: 60%;
   margin-left: 20%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .container-sub h3 {
@@ -106,14 +106,15 @@ header {
   color: white;
   line-height: 25px;
   letter-spacing: 1px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .skillset {
   line-height: 25px;
   color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
   background-color: rgb(0, 0, 0);
   opacity: 0.9;
 }
@@ -123,14 +124,20 @@ header {
   justify-content: center;
   /* margin-bottom: 50px; */
 }
-.skills {
+
+/* .skills {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+
+.skills li {
+  display: block;
+  width: 30%;
+  float: left;
 }
 
 .project {
   background-image: url('../images/bg2.jpg');
-  height: 650px;
+  height: 850px;
   opacity: 0.7;
 
   /* create the parallax scrolling effect */
@@ -143,6 +150,7 @@ header {
 .project-pr {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .project-pr-pr {
@@ -153,7 +161,7 @@ header {
   color: white;
   text-align: center;
   width: 30%;
-  height: 310px;
+  height: 22rem;
 }
 
 .project-pr-pr a {
@@ -182,7 +190,6 @@ span.fade {
 @media only screen and (max-width: 600px) {
   .container-sub {
     margin-top: auto;
-    top: 5%;
     width: 80%;
     margin-left: 10%;
   }
@@ -193,6 +200,7 @@ span.fade {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 1rem;
   }
   .about-me-me {
     text-align: center;
