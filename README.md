@@ -1,3 +1,3 @@
 # portfolio_2
 
-This is my portfolio website using html and css. 
+This is my portfolio website made in html,css and javascript. 
